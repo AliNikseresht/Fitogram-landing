@@ -1,6 +1,6 @@
 import React from "react";
 import AppLogo from "../ui/AppLogo";
-import Navbar from "../ui/Navbar";
+import Navbar from "./Header/Navbar";
 
 const Header = () => {
   return (

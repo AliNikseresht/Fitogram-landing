@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import RegisterBtn from "./RegisterBtn";
-import LoginBtn from "./LoginBtn";
+import RegisterBtn from "../../ui/RegisterBtn";
+import LoginBtn from "../../ui/LoginBtn";
 import { HiMenu, HiX } from "react-icons/hi";
 
 const menuItems = [
