@@ -1,0 +1,92 @@
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+import RegisterBtn from "./RegisterBtn";
+import LoginBtn from "./LoginBtn";
+import { HiMenu, HiX } from "react-icons/hi";
+
+const menuItems = [
+  { name: "About Us", href: "/about" },
+  { name: "Coaches", href: "/coaches" },
+  { name: "FAQ", href: "/faq" },
+  { name: "Contact Us", href: "/contact" },
+];
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <nav className="relative w-full md:w-auto">
+      {/* Desktop Menu */}
+      <ul className="hidden md:flex gap-5 items-center">
+        {menuItems.map((item, index) => (
+          <li key={index}>
+            <Link
+              href={item.href}
+              className="cursor-pointer hover:text-blue-500 duration-200 text-sm"
+            >
+              {item.name}
+            </Link>
+          </li>
+        ))}
+        <div className="flex gap-2 items-center">
+          <LoginBtn />
+          <RegisterBtn />
+        </div>
+      </ul>
+
+      {/* Mobile Menu Button */}
+      <div className="md:hidden flex items-center justify-end w-full">
+        <button
+          onClick={() => setIsOpen(true)}
+          className="text-[#212121] text-2xl"
+        >
+          <HiMenu />
+        </button>
+      </div>
+
+      {/* Mobile Fullscreen Sidebar */}
+      <div
+        className={`fixed inset-0 z-50 transform transition-transform duration-300 ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        } bg-white md:hidden`}
+      >
+        {/* Close Button */}
+        <div className="flex justify-end p-4">
+          <button onClick={() => setIsOpen(false)} className="text-3xl">
+            <HiX />
+          </button>
+        </div>
+
+        <ul className="flex flex-col items-start gap-1.5 px-6">
+          {menuItems.map((item, index) => (
+            <li key={index}>
+              <Link
+                href={item.href}
+                onClick={() => setIsOpen(false)}
+                className="text-sm hover:c-blue duration-200"
+              >
+                {item.name}
+              </Link>
+            </li>
+          ))}
+          <div className="flex gap-2 mt-2">
+            <RegisterBtn /> 
+            <LoginBtn />
+          </div>
+        </ul>
+      </div>
+
+      {/* Overlay */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black/50 z-40"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+    </nav>
+  );
+};
+
+export default Navbar;
