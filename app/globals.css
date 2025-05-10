@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 :root {
   --background: #ffffff;
@@ -36,4 +37,8 @@ body {
 
 .hover\:c-blue:hover {
   color: #2962eb;
+}
+
+.hover\:bg-bc-blue:hover {
+  background-color: #1748b9;
 }
