@@ -1,17 +1,12 @@
 "use client";
 
 import { coachesData } from "@/data/coachesData";
+import { allTags } from "@/data/TagsData";
 import { Coach } from "@/types/Coach";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
-const allTags = [
-  "All Coaches",
-  "Strength Training",
-  "Cardio",
-  "Nutrition",
-  "Yoga & Flexibility",
-];
 
 const CoachesSection: React.FC = () => {
   const [activeTag, setActiveTag] = useState("All Coaches");
@@ -53,7 +48,7 @@ const CoachesSection: React.FC = () => {
         {filteredCoaches.map((coach: Coach, index: number) => (
           <div
             key={index}
-            className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition"
+            className="bg-[#fff] border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition duration-200"
           >
             <Image
               src={coach.imageUrl}
@@ -77,12 +72,12 @@ const CoachesSection: React.FC = () => {
               </div>
               <h3 className="font-semibold text-lg">{coach.name}</h3>
               <p className="text-sm text-gray-600 mb-3">{coach.bio}</p>
-              <a
+              <Link
                 href={coach.profileLink}
-                className="text-blue-600 text-sm font-medium hover:underline"
+                className="text-blue-600 text-sm font-medium hover:underline duration-200"
               >
                 View Profile →
-              </a>
+              </Link>
             </div>
           </div>
         ))}
@@ -90,9 +85,12 @@ const CoachesSection: React.FC = () => {
 
       {/* View All Button */}
       <div className="mt-10">
-        <button className="px-6 py-2 border border-gray-300 rounded-full text-sm hover:bg-gray-100 duration-200 cursor-pointer">
+        <Link
+          href="/coaches"
+          className="px-6 py-2 border border-gray-300 rounded-full text-sm hover:bg-gray-100 duration-200 cursor-pointer"
+        >
           View All Coaches
-        </button>
+        </Link>
       </div>
     </section>
   );
