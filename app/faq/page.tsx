@@ -1,9 +1,8 @@
-import React from 'react'
+import FAQPageClient from "./_components/FAQPageClient";
+import { faqData } from "@/data/faqData";
 
-const FAQ = () => {
-  return (
-    <div>FAQ</div>
-  )
-}
+const FAQPage = () => {
+  return <FAQPageClient faqData={faqData} />;
+};
 
-export default FAQ
+export default FAQPage;
