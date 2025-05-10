@@ -2,9 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import RegisterBtn from "../../ui/RegisterBtn";
-import LoginBtn from "../../ui/LoginBtn";
 import { HiMenu, HiX } from "react-icons/hi";
+import CustomButton from "@/components/ui/CustomButton";
 
 const menuItems = [
   { name: "About Us", href: "/about" },
@@ -31,8 +30,8 @@ const Navbar = () => {
           </li>
         ))}
         <div className="flex gap-2 items-center">
-          <LoginBtn />
-          <RegisterBtn />
+          <CustomButton href="/login" label="Log In" variant="outline" />
+          <CustomButton href="/register" label="Sign Up" variant="primary" />
         </div>
       </ul>
 
@@ -50,7 +49,7 @@ const Navbar = () => {
       <div
         className={`fixed inset-0 z-50 transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } bg-white md:hidden`}
+        } bg-[#fff] md:hidden`}
       >
         {/* Close Button */}
         <div className="flex justify-end p-4">
@@ -72,8 +71,8 @@ const Navbar = () => {
             </li>
           ))}
           <div className="flex gap-2 mt-2">
-            <RegisterBtn /> 
-            <LoginBtn />
+            <CustomButton href="/register" label="Sign Up" variant="primary" />
+            <CustomButton href="/login" label="Log In" variant="outline" />
           </div>
         </ul>
       </div>

@@ -25,8 +25,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.c-blue {
+.c-blue,
+.bc-blue {
   color: #2962eb;
+}
+
+.bg-bc-blue {
+  background-color: #2962eb;
 }
 
 .hover\:c-blue:hover {
