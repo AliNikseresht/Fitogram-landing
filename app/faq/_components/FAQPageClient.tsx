@@ -23,9 +23,9 @@ const FAQPageClient = ({ faqData }: FAQPageClientProps) => {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-16">
-      <h1 className="text-4xl font-bold text-center bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-10">
+      <h3 className="text-4xl font-bold text-center bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-10">
         Frequently Asked Questions
-      </h1>
+      </h3>
 
       {faqData.map((section, i) => (
         <FAQSection

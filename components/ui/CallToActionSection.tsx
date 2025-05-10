@@ -11,11 +11,11 @@ const CallToActionSection = () => {
           </h2>
           <p className="mb-6 text-xs md:text-sm lg:text-base text-white/90">
             Join thousands of users who have already achieved their fitness
-            goals with FitPulse. Whether you&#39;re a fitness enthusiast or a professional coach, we have the perfect solution for you.
-
+            goals with FitPulse. Whether you&#39;re a fitness enthusiast or a
+            professional coach, we have the perfect solution for you.
           </p>
           <div className="flex gap-2">
-            <button className="bg-[#fff] text-xs md:text-base c-blue px-3 md:px-6 py-2 rounded-full font-medium hover:bg-gray-100 transition">
+            <button className="bg-[#fff] text-xs md:text-base c-blue px-3 md:px-6 py-2 rounded-full font-medium hover:bg-gray-100 cursor-pointer duration-200">
               Sign Up as User
             </button>
             <button className="border border-[#fff] text-[#fff] text-xs md:text-base px-3 md:px-6 py-2 rounded-full font-medium hover:bg-[#fff] hover:c-blue cursor-pointer transition duration-200">

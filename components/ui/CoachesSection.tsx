@@ -7,12 +7,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
-
 const CoachesSection: React.FC = () => {
-  const [activeTag, setActiveTag] = useState("All Coaches");
+  const [activeTag, setActiveTag] = useState("All");
 
   const filteredCoaches =
-    activeTag === "All Coaches"
+    activeTag === "All"
       ? coachesData
       : coachesData.filter((coach) => coach.tags.includes(activeTag));
 
@@ -34,7 +33,7 @@ const CoachesSection: React.FC = () => {
             onClick={() => setActiveTag(tag)}
             className={`px-4 py-2 rounded-full text-sm font-medium transition duration-200 cursor-pointer ${
               activeTag === tag
-                ? "bg-bc-blue text-white"
+                ? "bg-bc-blue text-[#fff]"
                 : "bg-gray-100 text-gray-700 hover:bg-gray-200"
             }`}
           >
