@@ -4,13 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { HiMenu, HiX } from "react-icons/hi";
 import CustomButton from "@/components/ui/CustomButton";
+import { menuItems } from "@/data/menuItems";
 
-const menuItems = [
-  { name: "About Us", href: "/about" },
-  { name: "Coaches", href: "/coaches" },
-  { name: "FAQ", href: "/faq" },
-  { name: "Contact Us", href: "/contact" },
-];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
