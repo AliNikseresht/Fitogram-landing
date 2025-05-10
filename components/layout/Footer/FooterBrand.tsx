@@ -45,13 +45,18 @@ const socials: SocialItem[] = [
 const FooterBrand: FC = () => (
   <div>
     <AppLogo />
-    <p className="my-5 text-sm text-gray-400 max-w-xs">
+    <p className="my-5 text-sm text-[#9ca3af] max-w-xs">
       Transforming fitness journeys through personalized coaching and
       cutting-edge technology.
     </p>
-    <div className="flex space-x-4 text-lg text-gray-400">
+    <div className="flex space-x-4 text-lg text-[#9ca3af]">
       {socials.map(({ icon, href, label, color }, index) => (
-        <a key={index} href={href} aria-label={label} className={color}>
+        <a
+          key={index}
+          href={href}
+          aria-label={label}
+          className={`${color} duration-200`}
+        >
           {icon}
         </a>
       ))}

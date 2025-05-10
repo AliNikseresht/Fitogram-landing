@@ -9,8 +9,8 @@ interface ContactLineProps {
 }
 
 const ContactLine: FC<ContactLineProps> = ({ icon, text }) => (
-  <div className="flex gap-2 items-center text-sm text-gray-400 mb-2">
-    <span className="text-blue-400">{icon}</span>
+  <div className="flex gap-2 items-center text-sm text-[#9ca3af] mb-2">
+    <span className="text-[#60a5fa]">{icon}</span>
     <p>{text}</p>
   </div>
 );
@@ -18,11 +18,11 @@ const ContactLine: FC<ContactLineProps> = ({ icon, text }) => (
 const FooterContact: FC = () => (
   <div>
     <h3 className="font-bold text-lg mb-4">Contact Us</h3>
-    <ContactLine icon={<HiOutlineMail />} text="support@fitogram.com" />
-    <ContactLine icon={<FaPhoneAlt />} text="+1 (234) 567-890" />
+    <ContactLine icon={<HiOutlineMail size={17}/>} text="support@fitogram.com" />
+    <ContactLine icon={<FaPhoneAlt />} text="+98-920-262-4622" />
     <ContactLine
       icon={<FaLocationDot />}
-      text="123 Fitness Ave, FitCity, USA"
+      text="Tehran, Iran"
     />
   </div>
 );
