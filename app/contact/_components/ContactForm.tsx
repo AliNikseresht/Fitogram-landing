@@ -45,7 +45,7 @@ const ContactForm: React.FC = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="bg-[#fff] rounded-lg shadow-md p-6 space-y-5 max-w-2xl w-full"
+      className="bg-[#fff] rounded-lg shadow-md p-3 md:p-6 space-y-5 max-w-2xl w-full"
       noValidate
     >
       <FormField
@@ -82,7 +82,7 @@ const ContactForm: React.FC = () => {
       <button
         type="submit"
         disabled={isSubmitting}
-        className=" bg-gradient-to-r from-[#2962eb] to-[#7b3aed] text-[#fff] px-6 py-2 rounded-full hover:bg-blue-700 duration-200 w-full"
+        className="cursor-pointer w-full font-medium text-base bg-gradient-to-r from-[#2962eb] to-[#7b3aed] text-[#fff] px-6 py-2 rounded-full"
       >
         {isSubmitting ? <CustomLoading /> : "Send Message"}
       </button>

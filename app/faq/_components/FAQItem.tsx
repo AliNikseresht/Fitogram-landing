@@ -6,10 +6,10 @@ type FAQItemProps = {
 };
 
 const FAQItem = ({ question, answer, isOpen, onToggle }: FAQItemProps) => (
-  <div className="border border-gray-200 rounded-md overflow-hidden">
+  <div className="border border-[#bababa] rounded-md overflow-hidden">
     <button
       onClick={onToggle}
-      className="w-full text-left px-4 py-3 bg-white hover:bg-gray-50 font-medium"
+      className="cursor-pointer w-full text-left px-4 py-3 bg-[#fff] hover:bg-gray-50 font-medium"
     >
       {question}
     </button>

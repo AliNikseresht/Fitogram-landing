@@ -37,10 +37,10 @@ export const coachesData: Coach[] = [
     profileLink: "#",
   },
   {
-    name: "Sarah Johnson",
+    name: "Angelina Johnson",
     bio: "Former athlete with expertise in endurance training and flexibility",
     tags: ["Cardio", "Yoga"],
-    imageUrl: "/coaches/coach-sarah.png",
+    imageUrl: "/coaches/angelina-coach.png",
     profileLink: "#",
   },
   {
@@ -51,10 +51,10 @@ export const coachesData: Coach[] = [
     profileLink: "#",
   },
   {
-    name: "Emma Wilson",
+    name: "Angelina Wilson",
     bio: "Specializes in HIIT training and functional fitness for all fitness levels",
     tags: ["Strength Training", "Cardio"],
-    imageUrl: "/coaches/coach-emma.png",
+    imageUrl: "/coaches/angelina-coach.png",
     profileLink: "#",
   },
   {

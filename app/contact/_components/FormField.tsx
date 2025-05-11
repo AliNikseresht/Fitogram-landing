@@ -21,7 +21,7 @@ const FormField: React.FC<Props> = ({
   placeholder,
 }) => (
   <div>
-    <label htmlFor={id} className="block mb-1 font-medium">
+    <label htmlFor={id} className="block mb-1 font-medium text-[#212121]">
       {label}
     </label>
     {isTextArea ? (
