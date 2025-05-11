@@ -6,7 +6,7 @@ import FooterBottom from "./Footer/FooterBottom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#111827] text-white py-5 px-4 md:px-20">
+    <footer className="bg-[#111827] text-[#fff] py-5 px-3 md:px-20">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         <FooterBrand />
         <FooterLinks />
