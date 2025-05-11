@@ -16,7 +16,7 @@ const CoachesSection: React.FC = () => {
       : coachesData.filter((coach) => coach.tags.includes(activeTag));
 
   return (
-    <section className="w-full py-16 px-5 bg-[#fff] text-center">
+    <section className="w-full py-16 px-3 md:px-5 bg-[#fff] text-center">
       <h2 className="font-bold text-xl md:text-3xl lg:text-5xl mb-2">
         Meet Our Elite Coaches
       </h2>

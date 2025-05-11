@@ -3,7 +3,7 @@ import CallToActionImage from "@/public/landing-banner.png";
 
 const CallToActionSection = () => {
   return (
-    <section className="w-full bg-gradient-to-r from-[#2962eb] to-[#7b3aed] py-16 px-5">
+    <section className="w-full bg-gradient-to-r from-[#2962eb] to-[#7b3aed] py-16 px-3 md:px-5">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
         <div className="text-white max-w-xl">
           <h2 className="font-bold text-xl md:text-3xl lg:text-5xl mb-4">

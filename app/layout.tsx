@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     "Gym",
   ],
   authors: [
-    { name: "Fitogram Team", url: "https://fitogram-landing.vercel.app/" },
+    { name: "Ali Nikseresht", url: "https://fitogram-landing.vercel.app/" },
   ],
   creator: "Fitogram",
   themeColor: "#ffffff",

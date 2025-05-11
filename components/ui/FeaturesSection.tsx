@@ -1,10 +1,11 @@
 import React from "react";
 import { featuresData } from "@/data/FeaturesSectionData";
 import { FeatureItem } from "@/types/FeaturesSectionTypes";
+import Link from "next/link";
 
 const FeaturesSection = () => {
   return (
-    <section className="w-full py-16 px-5 text-center bg-[#fff]">
+    <section className="w-full py-16 px-3 md:px-5 text-center bg-[#fff]">
       <h2 className="font-bold text-xl md:text-3xl lg:text-5xl mb-2">
         Powerful Features for Your Fitness Goals
       </h2>
@@ -24,16 +25,16 @@ const FeaturesSection = () => {
                 <Icon className="text-2xl" color={feature.color} />
               </div>
               <h3 className="font-semibold text-lg mb-2">{feature.title}</h3>
-              <p className="text-sm text-gray-600 mb-4">
+              <p className="text-sm text-gray-800 mb-4">
                 {feature.description}
               </p>
-              <a
+              <Link
                 href={feature.link}
                 style={{ color: feature.color }}
                 className="text-sm font-medium hover:underline transition-colors"
               >
                 Learn more →
-              </a>
+              </Link>
             </div>
           );
         })}

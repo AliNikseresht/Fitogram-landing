@@ -24,10 +24,10 @@ const Navbar = () => {
             </Link>
           </li>
         ))}
-        <div className="flex gap-2 items-center">
+        <li className="flex gap-2 items-center">
           <CustomButton href="/login" label="Log In" variant="outline" />
           <CustomButton href="/register" label="Sign Up" variant="primary" />
-        </div>
+        </li>
       </ul>
 
       {/* Mobile Menu Button */}
@@ -65,10 +65,10 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
-          <div className="flex gap-2 mt-2">
+          <li className="flex gap-2 mt-2">
             <CustomButton href="/register" label="Sign Up" variant="primary" />
             <CustomButton href="/login" label="Log In" variant="outline" />
-          </div>
+          </li>
         </ul>
       </div>
 
