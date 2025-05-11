@@ -15,7 +15,7 @@ const FAQForm = () => {
 
   return (
     <div className="mt-16">
-      <h2 className="text-2xl font-semibold text-blue-700 mb-4">
+      <h2 className="text-2xl font-semibold c-blue mb-4">
         Still have questions?
       </h2>
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -24,17 +24,17 @@ const FAQForm = () => {
           onChange={(e) => setQuestion(e.target.value)}
           placeholder="Ask your question here..."
           rows={4}
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+          className="w-full px-4 py-2 border border-[#bababa] rounded-md focus:outline-none focus:ring focus:ring-[#7b3aed]"
         />
         <button
           type="submit"
-          className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-md font-medium"
+          className="cursor-pointer font-medium text-lg bg-gradient-to-r from-[#2962eb] to-[#7b3aed] text-[#fff] px-6 py-2 rounded-full"
         >
           Submit Question
         </button>
       </form>
       {submitted && (
-        <p className="text-green-600 mt-4">
+        <p className="text-[#059669] mt-4">
           Your question has been submitted. Thank you!
         </p>
       )}

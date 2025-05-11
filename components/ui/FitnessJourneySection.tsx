@@ -29,7 +29,7 @@ const FitnessJourneySection = () => {
         alt="Fitness journey section image"
         className="rounded-lg shadow-2xl"
         width={550}
-        height={550}
+        height={500}
         priority
       />
     </section>
