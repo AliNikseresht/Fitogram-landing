@@ -1,7 +1,7 @@
 import AppLogo from "@/components/ui/AppLogo";
 import { socials } from "@/data/footerSocials";
 import Link from "next/link";
-import React, { FC, JSX } from "react";
+import React, { FC } from "react";
 
 const FooterBrand: FC = () => (
   <div className="flex flex-col items-start">
