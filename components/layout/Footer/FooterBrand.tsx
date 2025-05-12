@@ -1,49 +1,10 @@
 import AppLogo from "@/components/ui/AppLogo";
-import React, { FC, JSX } from "react";
-
-import {
-  FaInstagram,
-  FaTelegramPlane,
-  FaTwitter,
-  FaFacebookF,
-} from "react-icons/fa";
-
-interface SocialItem {
-  icon: JSX.Element;
-  href: string;
-  label: string;
-  color: string;
-}
-
-const socials: SocialItem[] = [
-  {
-    icon: <FaInstagram />,
-    href: "#",
-    label: "Instagram",
-    color: "hover:text-pink-500",
-  },
-  {
-    icon: <FaTelegramPlane />,
-    href: "#",
-    label: "Telegram",
-    color: "hover:text-blue-400",
-  },
-  {
-    icon: <FaTwitter />,
-    href: "#",
-    label: "Twitter",
-    color: "hover:text-sky-400",
-  },
-  {
-    icon: <FaFacebookF />,
-    href: "#",
-    label: "Facebook",
-    color: "hover:text-blue-600",
-  },
-];
+import { socials } from "@/data/footerSocials";
+import Link from "next/link";
+import React, { FC } from "react";
 
 const FooterBrand: FC = () => (
-  <div>
+  <div className="flex flex-col items-start">
     <AppLogo />
     <p className="my-5 text-sm text-[#9ca3af] max-w-xs">
       Transforming fitness journeys through personalized coaching and
@@ -51,14 +12,14 @@ const FooterBrand: FC = () => (
     </p>
     <div className="flex space-x-4 text-lg text-[#9ca3af]">
       {socials.map(({ icon, href, label, color }, index) => (
-        <a
+        <Link
           key={index}
           href={href}
           aria-label={label}
           className={`${color} duration-200`}
         >
           {icon}
-        </a>
+        </Link>
       ))}
     </div>
   </div>
