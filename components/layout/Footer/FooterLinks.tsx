@@ -10,7 +10,7 @@ const FooterLinks: FC = () => (
         <li key={index}>
           <Link
             href={item.href}
-            className="cursor-pointer hover:text-blue-500 duration-200 text-sm"
+            className="cursor-pointer hover:c-blue duration-200 text-sm"
           >
             {item.name}
           </Link>
