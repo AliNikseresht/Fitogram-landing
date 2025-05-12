@@ -21,7 +21,7 @@ const FitnessJourneySection = () => {
             href="/register"
             label="Start Your Journey"
           />
-          <CustomButton variant="outline" href="#" label="See How It Works" />
+          <CustomButton variant="outline" href="/faq" label="See How It Works" />
         </div>
       </div>
       <Image
