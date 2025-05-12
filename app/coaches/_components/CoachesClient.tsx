@@ -16,7 +16,7 @@ const CoachesClient = ({ coaches, tags }: CoachesClientProps) => {
   const [selectedTag, setSelectedTag] = useState("All");
 
   return (
-    <div className="max-w-7xl mx-auto px-3 md:px-5 py-5">
+    <section className="max-w-7xl mx-auto px-3 md:px-5 py-5">
       <div className="text-center mb-6">
         <h1>Expert Coaches</h1>
         <p className="mt-4 text-xs md:text-sm lg:text-base">
@@ -35,7 +35,7 @@ const CoachesClient = ({ coaches, tags }: CoachesClientProps) => {
       </div>
 
       <CoachList coaches={coaches} search={search} selectedTag={selectedTag} />
-    </div>
+    </section>
   );
 };
 
