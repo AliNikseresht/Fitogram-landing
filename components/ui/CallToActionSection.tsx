@@ -1,5 +1,6 @@
 import Image from "next/image";
 import CallToActionImage from "@/public/landing-banner.png";
+import Link from "next/link";
 
 const CallToActionSection = () => {
   return (
@@ -15,12 +16,19 @@ const CallToActionSection = () => {
             professional coach, we have the perfect solution for you.
           </p>
           <div className="flex gap-2">
-            <button className="bg-[#fff] text-xs md:text-base c-blue px-3 md:px-6 py-2 rounded-full font-medium hover:bg-gray-100 cursor-pointer duration-200">
+            <Link
+              href="/register"
+              className="bg-[#fff] text-xs md:text-base c-blue px-3 md:px-6 py-2 rounded-full font-medium hover:bg-gray-100 cursor-pointer duration-200"
+            >
               Sign Up as User
-            </button>
-            <button className="border border-[#fff] text-[#fff] text-xs md:text-base px-3 md:px-6 py-2 rounded-full font-medium hover:bg-[#fff] hover:c-blue cursor-pointer transition duration-200">
+            </Link>
+
+            <Link
+              href="/register"
+              className="border border-[#fff] text-[#fff] text-xs md:text-base px-3 md:px-6 py-2 rounded-full font-medium hover:bg-[#fff] hover:c-blue cursor-pointer transition duration-200"
+            >
               Join as Coach
-            </button>
+            </Link>
           </div>
         </div>
 

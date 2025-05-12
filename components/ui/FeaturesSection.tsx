@@ -1,7 +1,6 @@
 import React from "react";
 import { featuresData } from "@/data/FeaturesSectionData";
 import { FeatureItem } from "@/types/FeaturesSectionTypes";
-import Link from "next/link";
 
 const FeaturesSection = () => {
   return (
@@ -28,13 +27,6 @@ const FeaturesSection = () => {
               <p className="text-sm text-gray-800 mb-4">
                 {feature.description}
               </p>
-              <Link
-                href={feature.link}
-                style={{ color: feature.color }}
-                className="text-sm font-medium hover:underline transition-colors"
-              >
-                Learn more →
-              </Link>
             </div>
           );
         })}
