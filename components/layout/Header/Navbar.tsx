@@ -25,8 +25,8 @@ const Navbar = () => {
           </li>
         ))}
         <li className="flex gap-2 items-center">
-          <CustomButton href="/login" label="Log In" variant="outline" />
-          <CustomButton href="/register" label="Sign Up" variant="primary" />
+          <CustomButton href="https://fitogram-dashboard.vercel.app/login" label="Log In" variant="outline" />
+          <CustomButton href="https://fitogram-dashboard.vercel.app/register" label="Sign Up" variant="primary" />
         </li>
       </ul>
 
@@ -66,8 +66,8 @@ const Navbar = () => {
             </li>
           ))}
           <li className="flex gap-2 mt-2">
-            <CustomButton href="/register" label="Sign Up" variant="primary" />
-            <CustomButton href="/login" label="Log In" variant="outline" />
+            <CustomButton href="https://fitogram-dashboard.vercel.app/register" label="Sign Up" variant="primary" />
+            <CustomButton href="https://fitogram-dashboard.vercel.app/login" label="Log In" variant="outline" />
           </li>
         </ul>
       </div>
