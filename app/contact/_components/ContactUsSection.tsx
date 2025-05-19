@@ -6,7 +6,7 @@ import contactPhoto from "@/public/contact-us-image.png";
 const ContactUsSection: React.FC = () => {
   return (
     <section className="w-full py-5 px-3 md:px-5 flex flex-col items-center">
-      <h1>Contact Us</h1>
+      <h2>Contact Us</h2>
       <p className="mt-4 mb-10 text-xs md:text-sm lg:text-base">
         Have questions or feedback? We&apos;re here to help. Reach out and
         we&apos;ll get back to you shortly.

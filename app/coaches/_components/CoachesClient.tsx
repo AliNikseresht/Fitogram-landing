@@ -18,7 +18,7 @@ const CoachesClient = ({ coaches, tags }: CoachesClientProps) => {
   return (
     <section className="max-w-7xl mx-auto px-3 md:px-5 py-5">
       <div className="text-center mb-6">
-        <h1>Expert Coaches</h1>
+        <h2>Expert Coaches</h2>
         <p className="mt-4 text-xs md:text-sm lg:text-base">
           Find the perfect fitness professional to help you achieve your goals
           and transform your life.
