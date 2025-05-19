@@ -23,7 +23,7 @@ const FAQPageClient = ({ faqData }: FAQPageClientProps) => {
 
   return (
     <main className="max-w-4xl mx-auto px-3 md:px-5 py-5">
-      <h1>Frequently Asked Questions</h1>
+      <h2>Frequently Asked Questions</h2>
 
       {faqData.map((section, i) => (
         <FAQSection

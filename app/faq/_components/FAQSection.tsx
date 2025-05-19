@@ -17,7 +17,7 @@ const FAQSection = ({
   sectionIndex,
 }: FAQSectionProps) => (
   <section className="my-8">
-    <h2 className="text-2xl font-semibold bg-gradient-to-r from-[#2962eb] to-[#7b3aed] bg-clip-text text-transparent mb-4">{category}</h2>
+    <h3 className="text-2xl font-semibold bg-gradient-to-r from-[#2962eb] to-[#7b3aed] bg-clip-text text-transparent mb-4">{category}</h3>
     <div className="space-y-3">
       {questions.map((q, qIdx) => {
         const key = `${sectionIndex}-${qIdx}`;

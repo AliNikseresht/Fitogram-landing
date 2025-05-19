@@ -5,7 +5,7 @@ import Link from "next/link";
 import { HiMenu, HiX } from "react-icons/hi";
 import CustomButton from "@/components/ui/CustomButton";
 import { menuItems } from "@/data/menuItems";
-
+import AppLogo from "@/components/ui/AppLogo";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,8 +25,16 @@ const Navbar = () => {
           </li>
         ))}
         <li className="flex gap-2 items-center">
-          <CustomButton href="https://fitogram-dashboard.vercel.app/login" label="Log In" variant="outline" />
-          <CustomButton href="https://fitogram-dashboard.vercel.app/register" label="Sign Up" variant="primary" />
+          <CustomButton
+            href="https://fitogram-dashboard.vercel.app/login"
+            label="Log In"
+            variant="outline"
+          />
+          <CustomButton
+            href="https://fitogram-dashboard.vercel.app/register"
+            label="Sign Up"
+            variant="primary"
+          />
         </li>
       </ul>
 
@@ -47,7 +55,8 @@ const Navbar = () => {
         } bg-[#fff] md:hidden`}
       >
         {/* Close Button */}
-        <div className="flex justify-end p-4">
+        <div className="flex justify-between items-center p-4">
+          <AppLogo />
           <button onClick={() => setIsOpen(false)} className="text-3xl">
             <HiX />
           </button>
@@ -66,8 +75,16 @@ const Navbar = () => {
             </li>
           ))}
           <li className="flex gap-2 mt-2">
-            <CustomButton href="https://fitogram-dashboard.vercel.app/register" label="Sign Up" variant="primary" />
-            <CustomButton href="https://fitogram-dashboard.vercel.app/login" label="Log In" variant="outline" />
+            <CustomButton
+              href="https://fitogram-dashboard.vercel.app/register"
+              label="Sign Up"
+              variant="primary"
+            />
+            <CustomButton
+              href="https://fitogram-dashboard.vercel.app/login"
+              label="Log In"
+              variant="outline"
+            />
           </li>
         </ul>
       </div>

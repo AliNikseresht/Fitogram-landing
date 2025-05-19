@@ -4,7 +4,7 @@ import React from "react";
 const About = () => {
   return (
     <main className="flex flex-col items-center gap-4 w-full px-3 md:px-5 py-5 text-[#212121]">
-      <h1>About Fitogram</h1>
+      <h2>About Fitogram</h2>
 
       <div className="max-w-4xl">
         {aboutParagraphs.map((text, index) => (
