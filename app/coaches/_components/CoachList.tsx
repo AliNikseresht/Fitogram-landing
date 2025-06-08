@@ -55,8 +55,8 @@ const CoachList: FC<CoachListProps> = ({ coaches, search, selectedTag }) => {
           <button
             onClick={handleLoadMore}
             disabled={loading}
-            className={`px-6 py-2 rounded-full text-white ${
-              loading ? "cursor-not-allowed" : "bg-bc-blue hover:bg-bc-blue"
+            className={`px-6 py-2 rounded-full text-white cursor-pointer ${
+              loading ? "cursor-not-allowed" : "bg-gradient-to-r from-[#2962eb] to-[#7b3aed]"
             } duration-200`}
           >
             {loading ? <CustomLoading /> : "Load More Coaches"}
