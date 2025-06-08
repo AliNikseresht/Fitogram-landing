@@ -18,7 +18,7 @@ const FitnessJourneySection = () => {
         <div className="flex gap-2 mt-4">
           <CustomButton
             variant="primary"
-            href="/register"
+            href="https://fitogram-dashboard.vercel.app/login"
             label="Start Your Journey"
           />
           <CustomButton variant="outline" href="/faq" label="See How It Works" />

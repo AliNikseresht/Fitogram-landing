@@ -31,9 +31,9 @@ const CoachesSection: React.FC = () => {
           <button
             key={tag}
             onClick={() => setActiveTag(tag)}
-            className={`px-4 py-2 rounded-full text-sm font-medium transition duration-200 cursor-pointer ${
+            className={`px-4 py-2 rounded-lg text-sm font-medium transition duration-200 cursor-pointer min-w-[55px] ${
               activeTag === tag
-                ? "bg-bc-blue text-[#fff]"
+                ? "bg-gradient-to-r from-[#2962eb] to-[#7b3aed] text-white"
                 : "bg-gray-100 text-gray-700 hover:bg-gray-200"
             }`}
           >
