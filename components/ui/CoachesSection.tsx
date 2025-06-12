@@ -4,7 +4,6 @@ import { coachesData } from "@/data/coachesData";
 import { allTags } from "@/data/TagsData";
 import { Coach } from "@/types/Coach";
 import Image from "next/image";
-import Link from "next/link";
 import React, { useState } from "react";
 
 const CoachesSection: React.FC = () => {
@@ -16,14 +15,15 @@ const CoachesSection: React.FC = () => {
       : coachesData.filter((coach) => coach.tags.includes(activeTag));
 
   return (
-    <section className="w-full py-16 px-3 md:px-5 bg-[#fff] text-center">
+    <section className="w-full lg:py-10 px-3 md:px-5 text-center">
       <h2 className="font-bold text-xl md:text-3xl lg:text-5xl mb-2">
         Meet Our Elite Coaches
       </h2>
-      <p className="text-xs md:text-sm lg:text-base mx-auto mb-8">
-        Connect with certified professionals who are passionate about helping
-        you achieve your fitness goals.
+      <p className="text-xs md:text-sm lg:text-base mx-auto text-gray-600">
+        Connect with licensed professionals who are eager to help you achieve
+        your fitness goals.
       </p>
+      <p className="text-gray-600 mb-6">Some of the best trainers we have worked with include</p>
 
       {/* Tags */}
       <div className="flex flex-wrap justify-center gap-2 mb-10">
@@ -58,7 +58,7 @@ const CoachesSection: React.FC = () => {
               height={400}
             />
 
-            <div className="p-4 text-start">
+            <div className="p-4 text-start flex flex-col justify-between">
               <div className="flex flex-wrap gap-2 mb-2">
                 {coach.tags.map((tag, i) => (
                   <span
@@ -71,25 +71,9 @@ const CoachesSection: React.FC = () => {
               </div>
               <h3 className="font-semibold text-lg">{coach.name}</h3>
               <p className="text-sm text-gray-600 mb-3">{coach.bio}</p>
-              <Link
-                href={coach.profileLink}
-                className="text-blue-600 text-sm font-medium hover:underline duration-200"
-              >
-                View Profile →
-              </Link>
             </div>
           </div>
         ))}
-      </div>
-
-      {/* View All Button */}
-      <div className="mt-10">
-        <Link
-          href="/coaches"
-          className="px-6 py-2 border border-gray-300 rounded-full text-sm hover:bg-gray-100 duration-200 cursor-pointer"
-        >
-          View All Coaches
-        </Link>
       </div>
     </section>
   );

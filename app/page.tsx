@@ -5,7 +5,7 @@ import FitnessJourneySection from "@/components/ui/FitnessJourneySection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center w-full h-full">
+    <div className="flex flex-col gap-10 items-center w-full h-full">
       <FitnessJourneySection />
       <FeaturesSection />
       <CoachesSection />
