@@ -4,7 +4,7 @@ import { FeatureItem } from "@/types/FeaturesSectionTypes";
 
 const FeaturesSection = () => {
   return (
-    <section className="w-full py-16 px-3 md:px-5 text-center bg-[#fff]">
+    <section className="w-full lg:py-10 px-3 md:px-5 text-center">
       <h2 className="font-bold text-xl md:text-3xl lg:text-5xl mb-2">
         Powerful Features for Your Fitness Goals
       </h2>

@@ -4,6 +4,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import CustomLoading from "@/components/ui/CustomLoading";
 import FormField from "./FormField";
+import { toast } from "react-toastify";
 
 type ContactFormInputs = {
   name: string;
@@ -36,9 +37,9 @@ const ContactForm: React.FC = () => {
     try {
       console.log("Form submitted:", data);
       await new Promise((res) => setTimeout(res, 1000));
-      alert("Message sent successfully!");
+      toast.success("Message sent successfully!");
     } catch {
-      alert("Failed to send message.");
+      toast.error("Failed to send message.");
     }
   };
 
